@@ -24,8 +24,9 @@ const Shoes = (props)=>{
             <button className='border' 
             style=
             {{textAlign:'center', 
-            color: 'teal',
-            backgroundColor:'transparent'
+            color: 'black',
+            backgroundColor:'transparent',
+            fontSize: 20,
             }}
             onClick={()=>navigate('/shoes/new')}>Add Shoe</button>
 

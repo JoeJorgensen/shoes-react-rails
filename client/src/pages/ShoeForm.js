@@ -35,15 +35,22 @@ const ShoeForm = (props)=>{
          style={{ textAlign: 'center'}}>
             <h1>Shoe Form</h1>
             <form onSubmit={handleSubmit}>
-            <h3> 
+            <h4> 
              <p>Brand</p>
             <input value={brand} onChange={(e)=> setBrand(e.target.value)}/>
             <p>Style</p>
             <input value={style} onChange={(e)=> setStyle(e.target.value)}/>
             <p>Price</p>
             <input type='number' value={price} onChange={(e)=> setPrice(e.target.value)}/>
-            </h3>
-            <button>{state && state.id ? 'Edit' : 'Add'}</button>
+            </h4>
+            <button className='border' 
+            style=
+            {{textAlign:'center', 
+            color: 'black',
+            backgroundColor:'transparent',
+            fontSize: 20,
+            }}>{state && state.id ? 'Edit' : 'Add'}</button>
+            
             </form>
             {/* <p>{JSON.stringify(state)}</p> */}
         </div>
