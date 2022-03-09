@@ -2,20 +2,21 @@ import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1>Starter App</h1>
+    <div className='border' style={{fontSize:'30px'}}>
+      <h1>Shoes app</h1>
       <nav
         style={{
-          borderBottom:'1px solid'
+          borderBottom:'2px solid',
+          // textAlign:'center'
         }}
         >
-          <Link to='/home'>Home</Link> - {' '}
+          {/* <Link to='/home'>Home</Link> - {' '} */}
           <Link to='/shoes'>Shoes</Link> - {' '}
-          <Link to='/shoes/new'>New Shoes</Link> - {' '}
+          <Link to='/shoes/new'>New Shoe</Link>  {' '}
 
-          <Link to='/about'>About</Link>
+          {/* <Link to='/about'>About</Link> */}
         </nav>
-        <p>Outlet component here</p>
+        <p></p>
         <Outlet />
     </div>
   );
