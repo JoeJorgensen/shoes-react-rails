@@ -26,7 +26,7 @@ const ShoeForm = (props)=>{
               updateShoe({brand, style, price, id: state.id}, navigate('/shoes'));
             }else{
 
-                addShoe({brand, style, price}, navigate('/shoes'));
+                addShoe({brand, style, price}, navigate);
             }
       }
     return (
