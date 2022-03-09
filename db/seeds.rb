@@ -11,3 +11,6 @@
 Shoe.create(brand:'Nike', style: 'presto', price:'120')
 Shoe.create(brand:'Addidas', style: 'ultraboost', price:'130')
 Shoe.create(brand:'Nike', style: 'Air max 1', price:'140')
+Shoe.create(brand:'Vans', style: 'Blue Magnum', price: '400')
+Shoe.create(brand:'Vans', style: 'Darth Vader', price: '300')
+
