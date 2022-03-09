@@ -18,7 +18,7 @@ const Shoes = (props)=>{
   }
     return (
         <div 
-        className='border'
+       
         style={{ textAlign: 'center'}}>
             <h1>Shoes</h1>
             <button className='border' 

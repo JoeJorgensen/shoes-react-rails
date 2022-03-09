@@ -145,3 +145,19 @@ ReactDOM.render(
 reportWebVitals();
 
 ```
+# cloning 
+
+```
+// in week-x dir
+$ git clone <ssh-link> 
+$ cd project-name
+// install packages
+$ bundle
+$ rails db:create db:migrate db:seed
+$ rails s -p 3001
+
+//in another pane in terminal (ctrl-d)
+$ cd client
+$ yarn
+$ yarn start
+```
