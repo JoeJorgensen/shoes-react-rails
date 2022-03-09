@@ -21,7 +21,14 @@ const Shoes = (props)=>{
         className='border'
         style={{ textAlign: 'center'}}>
             <h1>Shoes</h1>
-            <p className='border' style={{display: 'flex', justifyContent: 'space-around'}}onClick={()=>navigate('/shoes/new')}>Add Shoe</p>
+            <button className='border' 
+            style=
+            {{textAlign:'center', 
+            color: 'teal',
+            backgroundColor:'transparent'
+            }}
+            onClick={()=>navigate('/shoes/new')}>Add Shoe</button>
+
             <div className='border'>
                 <code>{renderShoes()}</code>
             </div>
