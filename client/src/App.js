@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 function App() {
   return (
     <div className='border' style={{fontSize:'30px'}}>
-      <h1>Shoes App</h1>
+      <h1>The Shoe Lord</h1>
       <nav
         style={{
           borderBottom:'2px solid',
