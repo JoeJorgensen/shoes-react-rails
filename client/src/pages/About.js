@@ -6,6 +6,7 @@ const About = ()=>{
         <div>
             <h1>About Page</h1>
             <button onClick={()=>setDataDemo('dataDemo changed in about')}>Change dataDemo</button>
+            <p>Shoes Are Cool</p>
             <p>dataDemo: {dataDemo}</p>
         </div>
     )

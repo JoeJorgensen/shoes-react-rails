@@ -12,7 +12,8 @@ function App() {
         >
           {/* <Link to='/home'>Home</Link> - {' '} */}
           <Link to='/shoes'>Shoes</Link> - {' '}
-          <Link to='/shoes/new'>New Shoe</Link>  {' '}
+          <Link to='/shoes/new'>New Shoe</Link> - {' '}
+          <Link to='/about'>About</Link> {' '}
 
           {/* <Link to='/about'>About</Link> */}
         </nav>
