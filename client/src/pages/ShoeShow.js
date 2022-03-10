@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { DataContext } from '../providers/DataProvider'
@@ -6,7 +7,8 @@ import { DataContext } from '../providers/DataProvider'
 
 const ShoeShow = (props)=>{
     useEffect(()=>{
-        findShoe()
+
+    getShoe()
     },[])
 
 
@@ -14,19 +16,31 @@ const ShoeShow = (props)=>{
     const {shoes} = useContext(DataContext)
     const [shoe, setShoe]= useState(null)
 
-    const findShoe =()=>{
-         let shoe = shoes.find(s=> s.id === parseInt(params.id)) 
+    const getShoe = async()=>{
 
-    setShoe(shoe)
-}
+        try{
+        let res = await axios.get(`/api/shoes/${params.id}`)
+        setShoe(res.data)
+       
+        console.log(res)
+        }catch(err){
+            alert('error showing shoe')
+        }
+
+        //  let shoe = shoes.find(s=> s.id === parseInt(params.id)) 
+
+    }
    
         // setShoe(findShoe)
-        console.log('rendered')
-    
+        // console.log('rendered')
+        // const {id, brand, style, price} = props;
     return (
         <div className='border'>
             <h1>Show Shoe </h1>
-           <code>{JSON.stringify(shoe)}</code>
+            {/* <p >Brand:</p> */}
+            <p className='border' >{JSON.stringify(shoe)}</p>
+            {/* <p>{shoes.price}</p> */}
+           {/* <code>{JSON.stringify(shoe)}</code> */}
            {/* <p>Brand: {params.brand}</p>  */}
             {/* <p>{params.id}</p> */}
         </div>
