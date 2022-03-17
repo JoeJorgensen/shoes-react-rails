@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -69,4 +71,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  /* align-self: center; */
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+card {
+
 }

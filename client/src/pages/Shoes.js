@@ -21,7 +21,7 @@ const Shoes = (props)=>{
        
         style={{ textAlign: 'center'}}>
             <h1>Shoes</h1>
-            <button className='border' 
+            <button 
             style=
             {{textAlign:'center', 
             color: 'black',

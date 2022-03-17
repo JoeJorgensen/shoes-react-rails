@@ -1,8 +1,9 @@
 import { Link, Outlet } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className='border' style={{fontSize:'30px'}}>
+    <div style = {{textAlign: 'center'}}>
       <h1>Shoes App</h1>
       <nav
         style={{
